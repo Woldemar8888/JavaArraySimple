@@ -11,6 +11,8 @@ public class Task_1_4 {
     private int countPrev;
     private int countLast;
 
+    private int predominantNumber;
+
     private boolean isPrevFound;
     private boolean isOtherFound;
 
@@ -70,7 +72,9 @@ public class Task_1_4 {
         if(ints[ints.length-1] == prev) countPrev++;
         if(ints[ints.length-1] == last) countLast++;
 
-        return countPrev >= countLast ? prev : last ;
+        predominantNumber = countPrev >= countLast ? prev : last;
+
+        return  predominantNumber;
     }
 
 }

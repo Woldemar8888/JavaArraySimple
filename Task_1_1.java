@@ -6,6 +6,8 @@ public class Task_1_1 {
 
     public int getMaxSum (int [] arr){
 
+        int maxSum;
+
         if(arr.length == 0){
             System.out.println("Array is empty!");
             return 0;
@@ -24,7 +26,8 @@ public class Task_1_1 {
         tempArr[length-1] = isEven ? arr[length - 1] + arr[length] : arr[length -1];
 
         Arrays.sort(tempArr);
+        maxSum = tempArr[length - 1];
 
-        return tempArr[length - 1];
+        return maxSum;
     }
 }

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Task_1_2 {
+
     public String filterMin(int [] arr){
 
         if(arr.length == 0){
